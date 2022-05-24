@@ -1,0 +1,11 @@
+    Team                  Played  Won Drawn Lost  Points
+Fleetdown United            16    14    2    0     30  .
+Northfleet Eagles           18    12    1    5     25  .
+Belvedere Youth             18    11    1  	 6     23  .
+Parkwood Rangers Green      17    10    0    7     20  .
+Dulwich Village White       17    9     0    8     18  .
+Danson Sports Black         18    7	    3    8     17  .
+Chislehurst Wanderers       17    7     1    9     15  .
+Swanscombe Tigers           16    7     1    8     15  .
+Junior Reds Sabres          17    2     1    14    5   .
+Welling Wanderers           18    2     0    16    4   .
