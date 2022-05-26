@@ -5,6 +5,8 @@ import java.io.RandomAccessFile;
 import java.io.IOException;
 import java.util.Scanner;
 
+// isfandiyor says make it sort by who lost most, won most etc
+
 class Main {
     public static void
     main(String[] args) {
@@ -69,7 +71,7 @@ class Main {
             for (int i = lineStart; i < lineEnd; i++) { // loop through the lines
                 technique.seek(bytesPerLine * i); // finds the start of line
                 data = technique.readLine(); // holds each line
-                FTeam.add(data); // adds it to array List
+                System.out.print(data); // adds it to array List
             }
             technique.close();
 
