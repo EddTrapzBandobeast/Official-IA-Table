@@ -6,8 +6,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 class Main {
-    public static void
-    main(String[] args) {
+    public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
 
@@ -24,30 +23,30 @@ class Main {
         // overall if statement
         if ( overall == 1){
             for (int i = 0; i < 11; i++){
-                String output1 = readFile(i, (i+1), 56);
+                String output1 = readFile(i, (i+1), 54);
                 System.out.println(output1);
             }
-// test
+
 
         } else if (overall == 2){
 
             System.out.print("What position in the league? ");
             int specific = input.nextInt();
 
-            String output2 = readFile(0, 1, 56);
+            String output2 = readFile(0, 1, 54);
             System.out.print("\n" + output2);
 
-            String output = readFile(specific, specific+1, 56);
+            String output = readFile(specific, specific+1, 54);
             System.out.println(output);
         } else{
             for (int i = 0; i < 11; i++){
-                String output1 = readFile(i, (i+1), 56);
+                String output1 = readFile(i, (i+1), 54);
                 System.out.println(output1);
             }
             System.out.print("What postion are the team you would like to Modify? ");
             int SpecialTeam = input.nextInt();
 
-            String output = readFile2(SpecialTeam, 22, 56);
+            String output = readFile2(SpecialTeam, 22, 54);
             System.out.println(output);
         }
 
@@ -69,7 +68,7 @@ class Main {
             for (int i = lineStart; i < lineEnd; i++) { // loop through the lines
                 technique.seek(bytesPerLine * i); // finds the start of line
                 data = technique.readLine(); // holds each line
-                FTeam.add(data); // adds it to array List
+                System.out.print(data); // adds it to array List
             }
             technique.close();
 
@@ -115,4 +114,5 @@ class Main {
     }
 
 }
+
 
