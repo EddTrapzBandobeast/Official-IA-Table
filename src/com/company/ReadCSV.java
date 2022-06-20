@@ -14,7 +14,7 @@ public class ReadCSV {
 
 
 
-        String line = " ";
+        String line;
 
 
     try {

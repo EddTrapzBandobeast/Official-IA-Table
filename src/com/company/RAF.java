@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 
 
-public class ReadFile {
+public class RAF {
     public static int accRead(int option1, int options2, int idk) {
 
         Scanner input = new Scanner(System.in);
