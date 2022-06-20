@@ -2,12 +2,6 @@ package com.company;
 
 
 import javax.swing.*;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.JLabel;
-import javax.swing.JTextField;
-import javax.swing.JPasswordField;
-import javax.swing.JButton;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -22,7 +16,7 @@ public class GUI_login implements ActionListener {
     private static JButton button;
     private static JLabel success;
 
-    public static int swing1_do (int a ) {
+    public static void swing1_do(){
 
         JPanel panel = new JPanel();
         JFrame frame = new JFrame();
@@ -61,7 +55,7 @@ public class GUI_login implements ActionListener {
         frame.setVisible(true);
 
 
-return a;
+
 
     }
 

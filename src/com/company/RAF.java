@@ -63,7 +63,7 @@ return idk;
         int bytesPerLine = charsPerLine + 1 ;
 
         try {
-            RandomAccessFile technique = new RandomAccessFile("RAF.FootballTable.txt", "rw");
+            RandomAccessFile technique = new RandomAccessFile("RAF_FTable.txt", "rw");
 
             for (int i = lineStart; i < lineEnd; i++) { // loop through the lines
                 technique.seek(bytesPerLine * i); // finds the start of line
@@ -91,7 +91,7 @@ return idk;
         int bytesPerLine = charsPerLine2 + 1 ;
 
         try {
-            RandomAccessFile technique2 = new RandomAccessFile("RAF.FootballTable.txt", "rw");
+            RandomAccessFile technique2 = new RandomAccessFile("RAF_FTable.txt", "rw");
 
 
 

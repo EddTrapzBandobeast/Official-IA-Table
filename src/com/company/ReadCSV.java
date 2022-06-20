@@ -8,7 +8,7 @@ public class ReadCSV {
 
     public static void doRead()  {
 
-// this is sequential file access, reading from CSV
+// this is sequential file access, reading from CSV_FTable
 // better to use and more widely used in Java
 // may want to keep the RAF one to have evidence of using RAF
 
@@ -18,7 +18,7 @@ public class ReadCSV {
 
 
     try {
-        BufferedReader br = new BufferedReader(new FileReader("CSV"));
+        BufferedReader br = new BufferedReader(new FileReader("CSV_FTable"));
 
         while((line = br.readLine()) != null){// while the next line is not empty
 
