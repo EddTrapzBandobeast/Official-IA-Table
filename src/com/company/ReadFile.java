@@ -5,14 +5,12 @@ import java.io.RandomAccessFile;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class UserChoice {
 
 
-    public static void Select(String[] args) {
+public class ReadFile {
+    public static int accRead(int option1, int options2, int idk) {
 
         Scanner input = new Scanner(System.in);
-
-        System.out.println("Welcome to the Selkent League!");
 
 
         System.out.println("\n" + "1.) See league table");
@@ -23,37 +21,37 @@ public class UserChoice {
         int overall = input.nextInt();
 
         // overall if statement
-        if ( overall == 1){
+        if ( overall == option1){
             for (int i = 0; i < 11; i++){
-                String output1 = readFile(i, (i+1), 56);
+                String output1 = readFile(i, (i+1), 54);
                 System.out.println(output1);
             }
 
 
-        } else if (overall == 2){
+        } else if (overall == options2){
 
             System.out.print("What position in the league? ");
             int specific = input.nextInt();
 
-            String output2 = readFile(0, 1, 56);
+            String output2 = readFile(0, 1, 54);
             System.out.print("\n" + output2);
 
-            String output = readFile(specific, specific+1, 56);
+            String output = readFile(specific, specific+1, 54);
             System.out.println(output);
         } else{
             for (int i = 0; i < 11; i++){
-                String output1 = readFile(i, (i+1), 56);
+                String output1 = readFile(i, (i+1), 54);
                 System.out.println(output1);
             }
-            System.out.print("What position are the team you would like to Modify? ");
+            System.out.print("What postion are the team you would like to Modify? ");
             int SpecialTeam = input.nextInt();
 
-            String output = readFile2(SpecialTeam, 22, 56);
+            String output = readFile2(SpecialTeam, 22, 54);
             System.out.println(output);
         }
 
 
-
+return idk;
 
     }
 
@@ -65,7 +63,7 @@ public class UserChoice {
         int bytesPerLine = charsPerLine + 1 ;
 
         try {
-            RandomAccessFile technique = new RandomAccessFile("FootballTable.txt", "rw");
+            RandomAccessFile technique = new RandomAccessFile("RAF.FootballTable.txt", "rw");
 
             for (int i = lineStart; i < lineEnd; i++) { // loop through the lines
                 technique.seek(bytesPerLine * i); // finds the start of line
@@ -93,7 +91,7 @@ public class UserChoice {
         int bytesPerLine = charsPerLine2 + 1 ;
 
         try {
-            RandomAccessFile technique2 = new RandomAccessFile("FootballTable.txt", "rw");
+            RandomAccessFile technique2 = new RandomAccessFile("RAF.FootballTable.txt", "rw");
 
 
 
@@ -116,5 +114,3 @@ public class UserChoice {
     }
 
 }
-
-
