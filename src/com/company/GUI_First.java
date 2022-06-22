@@ -13,14 +13,15 @@ public class GUI_First implements ActionListener{
     private static JTextField userText;
     private static JLabel passwordLabel;
     private static JPasswordField passwordText;
-    private static JButton button;
+    private static JButton button1;
+    private static JButton button2;
     private static JLabel success;
 
-    public static void swing2_do(){
+    public GUI_First(){
 
         JPanel panel = new JPanel();
         JFrame frame = new JFrame();
-        frame.setSize(800, 400); // dimensions of window
+        frame.setSize(800, 500); // dimensions of window
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.add(panel); //panel is added to the whole frame
 
@@ -30,15 +31,15 @@ public class GUI_First implements ActionListener{
         userLabel.setBounds(310,20,350,100);
         panel.add(userLabel);// you have to add everything to panel
 
-        button = new JButton("League table");// creates a button with text
-        button.setBounds(330,150,150,50);
-        button.addActionListener(new GUI_First());//If button is clicked, runs actionPerformed
-        panel.add(button);
+        button1 = new JButton("League table");// creates a button with text
+        button1.setBounds(330,150,150,50);
+        button1.addActionListener(this);//If button is clicked, runs actionPerformed
+        panel.add(button1);
 
-        button = new JButton("Individual/ Modify");// creates a button with text
-        button.setBounds(330,220,150,50);
-        button.addActionListener(new GUI_First());//If button is clicked, runs actionPerformed
-        panel.add(button);
+        button2 = new JButton("Individual/ Modify");// creates a button with text
+        button2.setBounds(330,220,150,50);
+        button2.addActionListener(this);//If button is clicked, runs actionPerformed
+        panel.add(button2);
 
 
         success = new JLabel("");
@@ -58,6 +59,12 @@ public class GUI_First implements ActionListener{
         if(e.getActionCommand().equals("Individual/ Modify")){
             GUI_login guiNew = new GUI_login();
         }
-    }
-}
 
+    if(e.getActionCommand().equals("League Table")){
+        System.out.print("fooooly");
+    }
+
+
+
+  }
+}

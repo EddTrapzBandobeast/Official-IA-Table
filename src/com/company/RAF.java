@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 
 public class RAF {
-    public static int accRead(int option1, int options2, int idk) {
+    public RAF() {
 
         Scanner input = new Scanner(System.in);
 
@@ -21,14 +21,14 @@ public class RAF {
         int overall = input.nextInt();
 
         // overall if statement
-        if ( overall == option1){
-            for (int i = 0; i < 11; i++){
-                String output1 = readFile(i, (i+1), 54);
+        if (overall == 1) {
+            for (int i = 0; i < 11; i++) {
+                String output1 = readFile(i, (i + 1), 54);
                 System.out.println(output1);
             }
 
 
-        } else if (overall == options2){
+        } else if (overall == 2) {
 
             System.out.print("What position in the league? ");
             int specific = input.nextInt();
@@ -36,11 +36,11 @@ public class RAF {
             String output2 = readFile(0, 1, 54);
             System.out.print("\n" + output2);
 
-            String output = readFile(specific, specific+1, 54);
+            String output = readFile(specific, specific + 1, 54);
             System.out.println(output);
-        } else{
-            for (int i = 0; i < 11; i++){
-                String output1 = readFile(i, (i+1), 54);
+        } else {
+            for (int i = 0; i < 11; i++) {
+                String output1 = readFile(i, (i + 1), 54);
                 System.out.println(output1);
             }
             System.out.print("What postion are the team you would like to Modify? ");
@@ -51,10 +51,7 @@ public class RAF {
         }
 
 
-return idk;
-
     }
-
     public static String readFile(int lineStart, int lineEnd, int charsPerLine) {
 
         String data = "  ";

@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class ReadCSV {
 
-    public static void doRead()  {
+    public ReadCSV(){
 
 // this is sequential file access, reading from CSV_FTable
 // better to use and more widely used in Java
@@ -30,16 +30,6 @@ public class ReadCSV {
     }catch (IOException E){
         E.printStackTrace();
     }
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -16,35 +16,35 @@ public class GUI_login implements ActionListener {
     private static JButton button;
     private static JLabel success;
 
-    public static void swing1_do(){
+    public GUI_login(){
 
         JPanel panel = new JPanel();
         JFrame frame = new JFrame();
-        frame.setSize(350, 200); // dimensions of window
+        frame.setSize(800, 500); // dimensions of window
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.add(panel); //panel is added to the whole frame
 
         panel.setLayout(null);
 
         userLabel = new JLabel("User");// JLabel is text on the window
-        userLabel.setBounds(10,20,80,25);
+        userLabel.setBounds(250,150,80,25);
         panel.add(userLabel);// you have to add everything to panel
 
         userText = new JTextField(20);// JTextField is where the user can input
-        userText.setBounds(100,20,165,25);
+        userText.setBounds(325,150,165,25);
         panel.add(userText);
 
         passwordLabel = new JLabel("Password");
-        passwordLabel.setBounds(10,50,80,25);
+        passwordLabel.setBounds(250,200,80,25);
         panel.add(passwordLabel);
 
         passwordText = new JPasswordField();//passwordField = can't see the chars
-        passwordText.setBounds(100,50,80,25);
+        passwordText.setBounds(325,200,80,25);
         panel.add(passwordText);
 
         button = new JButton("Login");// creates a button with text
-        button.setBounds(10,80,80,25);
-        button.addActionListener(new GUI_login());//If button is clicked, runs actionPerformed
+        button.setBounds(325,250,80,25);
+        button.addActionListener(this);//If button is clicked, runs actionPerformed
         panel.add(button);
 
         success = new JLabel("");
