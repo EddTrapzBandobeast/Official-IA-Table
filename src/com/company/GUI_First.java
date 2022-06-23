@@ -31,7 +31,7 @@ public class GUI_First implements ActionListener{
         userLabel.setBounds(310,20,350,100);
         panel.add(userLabel);// you have to add everything to panel
 
-        button1 = new JButton("League table");// creates a button with text
+        button1 = new JButton("League Table");// creates a button with text
         button1.setBounds(330,150,150,50);
         button1.addActionListener(this);//If button is clicked, runs actionPerformed
         panel.add(button1);
@@ -60,8 +60,8 @@ public class GUI_First implements ActionListener{
             GUI_login guiNew = new GUI_login();
         }
 
-    if(e.getActionCommand().equals("League Table")){
-        System.out.print("fooooly");
+    else if (e.getActionCommand().equals("League Table")){
+            GUI_LeagueT league = new GUI_LeagueT();
     }
 
 
