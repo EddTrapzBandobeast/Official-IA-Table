@@ -3,7 +3,7 @@ package com.company;
 
 import javax.swing.*;
 
-public class GUI_LeagueT {
+public class GUI_LeagueT extends ReadCSV {
 
     private static JLabel userLabel;
     private static JTextField userText;
@@ -11,7 +11,18 @@ public class GUI_LeagueT {
     private static JButton button;
     private static JLabel success;
 
+        String column1[] = new String[6];
+        String data1[][] = new String[6][10];
+
     public GUI_LeagueT(){
+
+
+
+
+
+
+
+
 
         JPanel panel = new JPanel();
         JFrame frame = new JFrame();
@@ -22,25 +33,24 @@ public class GUI_LeagueT {
 
 
 
-        String column1[] = new String[6];
-        String data1[][] = new String[6][10];
-
-        String column[]={"Team","Played","won","Drawn","Lost","Points"};
-        String data[][]={ {"Fleetdown United","16","670000","670000","670000","670000"},
-                          {"Northfleet Eagles","18","780000","670000","670000","670000"},
-                          {"Belvedere Youth","18","780000","670000","670000","670000"},
-                          {"Parkwood Rangers Green","17","780000","670000","670000","670000"},
-                          {"Dulwich Village White","17","780000","670000","670000","670000"},
-                          {"Danson Sports Black","18","780000","670000","670000","670000"},
-                          {"Chislehurst Wanderers","17","780000","670000","670000","670000"},
-                          {"Swanscombe Tigers","16","780000","670000","670000","670000"},
-                          {"Junior Reds Sabres","17","780000","670000","670000","670000"},
-                          {"Welling Wanderers","18","700000","670000","670000","670000"}};
+// so close yet so far
+// run it and see wagwan
+// almost there, just need to be able to find the correct no. of for loops and indexes to place myArray perfectly in data1
+// the first row of myArray is not needed because column1 takes care of the first row
 
 
+        for( int i = 1; i <6; i ++){
+            for( int k = 0; k < 6; k ++) {
+                data1[0][k] = myArray[i][k];
 
+            }
 
-        JTable table = new JTable(data,column);
+        }
+        for( int j = 0; j < 6; j ++){
+            column1[j] = myArray[0][j];
+        }
+
+        JTable table = new JTable(data1,column1);
 
         table.setBounds(0,400,200,800);
         JScrollPane sp=new JScrollPane(table);
