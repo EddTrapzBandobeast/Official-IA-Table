@@ -15,14 +15,7 @@ public class GUI_LeagueT extends ReadCSV {
         String data1[][] = new String[6][10];
 
     public GUI_LeagueT(){
-
-
-
-
-
-
-
-
+        //super();
 
         JPanel panel = new JPanel();
         JFrame frame = new JFrame();
@@ -33,19 +26,18 @@ public class GUI_LeagueT extends ReadCSV {
 
 
 
-// so close yet so far
-// run it and see wagwan
 // almost there, just need to be able to find the correct no. of for loops and indexes to place myArray perfectly in data1
 // the first row of myArray is not needed because column1 takes care of the first row
 
 
         for( int i = 1; i <6; i ++){
             for( int k = 0; k < 6; k ++) {
-                data1[0][k] = myArray[i][k];
+                data1[i][k] = myArray[i][k];
 
-            }
+               }
 
-        }
+          }
+
         for( int j = 0; j < 6; j ++){
             column1[j] = myArray[0][j];
         }

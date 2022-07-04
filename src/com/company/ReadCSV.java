@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class ReadCSV {
 
-    public static String[][] myArray;
+    protected static String[][] myArray;
 
     public ReadCSV() {
 
@@ -21,7 +21,7 @@ public class ReadCSV {
 
         Scanner input = null;
         int Row = 0;
-        String InputLine = "";
+        String inputLine = "";
 
 
         try {
@@ -29,9 +29,11 @@ public class ReadCSV {
 
             while (input.hasNextLine()) {
 
-                InputLine = input.nextLine();
+                inputLine = input.nextLine();
 
-                String[] tempArray = InputLine.split(",");
+                String[] tempArray = inputLine.split(",");
+
+                System.out.println(tempArray[0]);
 
                 for (int i = 0; i < 6; i++) {
                     myArray[Row][i] = tempArray[i];
@@ -39,7 +41,7 @@ public class ReadCSV {
 
                 Row++;
             }
-
+            System.out.println(myArray.length);
 
         } catch (IOException E) {
             E.printStackTrace();
