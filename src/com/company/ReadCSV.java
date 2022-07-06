@@ -33,7 +33,7 @@ public class ReadCSV {
 
                 String[] tempArray = inputLine.split(",");
 
-                System.out.println(tempArray[0]);
+                System.out.println(tempArray[5]);
 
                 for (int i = 0; i < 6; i++) {
                     myArray[Row][i] = tempArray[i];
