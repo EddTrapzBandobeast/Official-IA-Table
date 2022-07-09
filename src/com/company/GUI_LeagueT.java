@@ -5,11 +5,6 @@ import javax.swing.*;
 
 public class GUI_LeagueT extends ReadCSV {
 
-    private static JLabel userLabel;
-    private static JTextField userText;
-    private static JLabel Title;
-    private static JButton button;
-    private static JLabel success;
 
     String column1[] = new String[6];
     String data1[][] = new String[11][6];
@@ -17,7 +12,7 @@ public class GUI_LeagueT extends ReadCSV {
     public GUI_LeagueT(){
         //super();
 
-        JPanel panel = new JPanel();
+
         JFrame frame = new JFrame();
 
 
@@ -49,6 +44,3 @@ public class GUI_LeagueT extends ReadCSV {
     }
 
 }
-
-
-

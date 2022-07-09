@@ -10,12 +10,9 @@ public class GUI_First implements ActionListener{
     // these variables are declared for the whole code
     // so it can be accessed in the actionPerformed method
     private static JLabel userLabel;
-    private static JTextField userText;
-    private static JLabel passwordLabel;
-    private static JPasswordField passwordText;
     private static JButton button1;
     private static JButton button2;
-    private static JLabel success;
+
 
     public GUI_First(){
 
@@ -36,15 +33,11 @@ public class GUI_First implements ActionListener{
         button1.addActionListener(this);//If button is clicked, runs actionPerformed
         panel.add(button1);
 
-        button2 = new JButton("Individual/ Modify");// creates a button with text
+        button2 = new JButton("Individual Teams");// creates a button with text
         button2.setBounds(330,220,150,50);
         button2.addActionListener(this);//If button is clicked, runs actionPerformed
         panel.add(button2);
 
-
-        success = new JLabel("");
-        success.setBounds(10,110,300,25);
-        panel.add(success);
 
 
         frame.setVisible(true);
@@ -56,12 +49,12 @@ public class GUI_First implements ActionListener{
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if(e.getActionCommand().equals("Individual/ Modify")){
-            GUI_login guiNew = new GUI_login();
+        if(e.getActionCommand().equals("League Table")){
+            new GUI_LeagueT();
         }
 
-    else if (e.getActionCommand().equals("League Table")){
-            GUI_LeagueT league = new GUI_LeagueT();
+    else if (e.getActionCommand().equals("Individual Teams")){
+            new GUI_login();
     }
 
 
