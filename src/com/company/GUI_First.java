@@ -9,7 +9,7 @@ public class GUI_First implements ActionListener{
 
     // these variables are declared for the whole code
     // so it can be accessed in the actionPerformed method
-    private static JLabel userLabel;
+    private static JLabel userLabel; 
     private static JButton button1;
     private static JButton button2;
 
@@ -33,7 +33,7 @@ public class GUI_First implements ActionListener{
         button1.addActionListener(this);//If button is clicked, runs actionPerformed
         panel.add(button1);
 
-        button2 = new JButton("Individual Teams");// creates a button with text
+        button2 = new JButton("Teams / Match day");// creates a button with text
         button2.setBounds(330,220,150,50);
         button2.addActionListener(this);//If button is clicked, runs actionPerformed
         panel.add(button2);
@@ -53,7 +53,7 @@ public class GUI_First implements ActionListener{
             new GUI_LeagueT();
         }
 
-    else if (e.getActionCommand().equals("Individual Teams")){
+    else if (e.getActionCommand().equals("Teams / Match day")){
             new GUI_login();
     }
 

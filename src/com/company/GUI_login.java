@@ -9,12 +9,8 @@ public class GUI_login implements ActionListener {
 
     // these variables are declared for the whole code
     // so it can be accessed in the actionPerformed method
-    private static JLabel userLabel;
     private static JTextField userText;
-    private static JLabel passwordLabel;
     private static JPasswordField passwordText;
-    private static JButton button;
-    private static JLabel success;
 
     public GUI_login(){
 
@@ -26,6 +22,7 @@ public class GUI_login implements ActionListener {
 
         panel.setLayout(null);
 
+        JLabel userLabel;
         userLabel = new JLabel("User");// JLabel is text on the window
         userLabel.setBounds(250,150,80,25);
         panel.add(userLabel);// you have to add everything to panel
@@ -34,6 +31,7 @@ public class GUI_login implements ActionListener {
         userText.setBounds(325,150,165,25);
         panel.add(userText);
 
+        JLabel passwordLabel;
         passwordLabel = new JLabel("Password");
         passwordLabel.setBounds(250,200,80,25);
         panel.add(passwordLabel);
@@ -42,14 +40,11 @@ public class GUI_login implements ActionListener {
         passwordText.setBounds(325,200,80,25);
         panel.add(passwordText);
 
+        JButton button;
         button = new JButton("Login");// creates a button with text
         button.setBounds(325,250,80,25);
         button.addActionListener(this);//If button is clicked, runs actionPerformed
         panel.add(button);
-
-        success = new JLabel("");
-        success.setBounds(10,110,300,25);
-        panel.add(success);
 
 
         frame.setVisible(true);
@@ -67,7 +62,7 @@ public class GUI_login implements ActionListener {
 
 
         if (user.equals("e") && password.equals("d")) {
-            GUI_TeamChoice choice = new GUI_TeamChoice();
+            new GUI_TeamChoice();
         }
     }
 }
