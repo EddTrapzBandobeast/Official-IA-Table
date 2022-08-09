@@ -5,7 +5,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class GUI_First implements ActionListener{
+public class UserChoice1 implements ActionListener{
 
     // these variables are declared for the whole code
     // so it can be accessed in the actionPerformed method
@@ -14,7 +14,7 @@ public class GUI_First implements ActionListener{
     private static JButton button2;
 
 
-    public GUI_First(){
+    public UserChoice1(){
 
         JPanel panel = new JPanel();
         JFrame frame = new JFrame();
@@ -33,7 +33,7 @@ public class GUI_First implements ActionListener{
         button1.addActionListener(this);//If button is clicked, runs actionPerformed
         panel.add(button1);
 
-        button2 = new JButton("Teams / Match day");// creates a button with text
+        button2 = new JButton("Teams / Personal Table");// creates a button with text
         button2.setBounds(330,220,150,50);
         button2.addActionListener(this);//If button is clicked, runs actionPerformed
         panel.add(button2);
@@ -53,7 +53,7 @@ public class GUI_First implements ActionListener{
             new GUI_LeagueT();
         }
 
-    else if (e.getActionCommand().equals("Teams / Match day")){
+    else if (e.getActionCommand().equals("Teams / Personal Table")){
             new GUI_login();
     }
 

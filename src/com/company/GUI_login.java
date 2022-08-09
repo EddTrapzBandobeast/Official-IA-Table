@@ -62,7 +62,7 @@ public class GUI_login implements ActionListener {
 
 
         if (user.equals("e") && password.equals("d")) {
-            new GUI_TeamChoice();
+            new UserChoice2();
         }
     }
 }

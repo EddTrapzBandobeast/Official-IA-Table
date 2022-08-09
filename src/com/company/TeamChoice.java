@@ -5,7 +5,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class GUI_TeamChoice implements ActionListener {
+public class TeamChoice implements ActionListener {
 
     private static JLabel userLabel;
     private static JLabel userLabel2;
@@ -23,7 +23,7 @@ public class GUI_TeamChoice implements ActionListener {
 
 
 
-    public GUI_TeamChoice(){
+    public TeamChoice(){
 
         JPanel panel = new JPanel();
         JFrame frame = new JFrame();
