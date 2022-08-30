@@ -23,7 +23,7 @@ public class UserChoice2 implements ActionListener {
 
         panel.setLayout(null);
 
-        button1 = new JButton("Teams");// creates a button with text
+        button1 = new JButton("Pause");// creates a button with text
         button1.setBounds(330,150,150,50);
         button1.addActionListener(this);//If button is clicked, runs actionPerformed
         panel.add(button1);
@@ -44,8 +44,8 @@ public class UserChoice2 implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if(e.getActionCommand().equals("Teams")){
-            new TeamChoice();
+        if(e.getActionCommand().equals("Pause")){
+            new Pause();
         }
 
         else if (e.getActionCommand().equals("Personal Table")){

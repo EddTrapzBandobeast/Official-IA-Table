@@ -41,7 +41,7 @@ public class ReadCSV {
 
                 Row++;
             }
-            System.out.println(myArray.length);
+
 
         } catch (IOException E) {
             E.printStackTrace();
