@@ -7,12 +7,7 @@ import java.awt.event.ActionListener;
 
 public class OwnTable implements ActionListener {
     // To do:
-    // Make all the team buttons lables and put textfields under each team
     // so the user can enter a number and it gets saved into a variable
-    // Have a button at the end like 'make table', then goes to a different window
-
-
-
 
     private static JLabel userLabel;
     private static JButton button1;
@@ -26,8 +21,6 @@ public class OwnTable implements ActionListener {
     private static JButton button9;
     private static JButton button10;
     private static JButton goButton;
-
-
     private static JTextField userText;
     private static JTextField userText1;
     private static JTextField userText2;
@@ -144,9 +137,17 @@ public class OwnTable implements ActionListener {
         userText10.setBounds(235,395,25,25);
         panel.add(userText10);
 
+
+
         goButton = new JButton("Make Table");
         goButton.setBounds(605,400,130,35);
-        goButton.addActionListener(this);
+        goButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.out.println(userText10.getText());
+            }
+        });
+
         panel.add(goButton);
 
         frame.setVisible(true);
