@@ -33,6 +33,7 @@ public class OwnTable implements ActionListener {
     private static JTextField userText9;
     private static JTextField userText10;
     private static JTextField userText11;
+    int ownList[] = new int[10];
 
     public OwnTable(){
 
@@ -144,8 +145,26 @@ public class OwnTable implements ActionListener {
         goButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                System.out.println(userText10.getText());
-            }
+
+                ownList[0] = Integer.parseInt(userText1.getText());
+                ownList[1] = Integer.parseInt(userText2.getText());
+                ownList[2] = Integer.parseInt(userText3.getText());
+                ownList[3] = Integer.parseInt(userText4.getText());
+                ownList[4] = Integer.parseInt(userText5.getText());
+                ownList[5] = Integer.parseInt(userText6.getText());
+                ownList[6] = Integer.parseInt(userText7.getText());
+                ownList[7] = Integer.parseInt(userText8.getText());
+                ownList[8] = Integer.parseInt(userText9.getText());
+                ownList[9] = Integer.parseInt(userText10.getText());
+
+
+
+
+
+                new SortingAlg();
+
+                }
+
         });
 
         panel.add(goButton);
@@ -157,15 +176,9 @@ public class OwnTable implements ActionListener {
 
     }
 
+
     @Override
     public void actionPerformed(ActionEvent e) {
-        if(e.getActionCommand().equals("Make Table")){
-            System.out.print("Nani kore, huh?, nani kore, enorishimo Junko anatawomakeyo");
-        }
-
-
-
 
     }
 }
-
