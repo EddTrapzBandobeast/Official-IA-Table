@@ -158,12 +158,14 @@ public class OwnTable implements ActionListener {
                 ownList[9] = Integer.parseInt(userText10.getText());
 
 
-
+                for (int j : ownList) {
+                    System.out.println(j);
+                }
 
 
                 new SortingAlg();
 
-                }
+            }
 
         });
 
