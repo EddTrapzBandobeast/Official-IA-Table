@@ -33,7 +33,8 @@ public class OwnTable implements ActionListener {
     private static JTextField userText9;
     private static JTextField userText10;
 
-    int ownList[] = new int[10];
+    int []ownList = new int[10];
+    String []Teams = new String[10];
 
     public OwnTable(){
 
@@ -146,6 +147,8 @@ public class OwnTable implements ActionListener {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+
+
                 ownList[0] = Integer.parseInt(userText1.getText());
                 ownList[1] = Integer.parseInt(userText2.getText());
                 ownList[2] = Integer.parseInt(userText3.getText());
@@ -157,13 +160,27 @@ public class OwnTable implements ActionListener {
                 ownList[8] = Integer.parseInt(userText9.getText());
                 ownList[9] = Integer.parseInt(userText10.getText());
 
+                int Fleetdown = Integer.parseInt(userText1.getText());
+                int Nf =  Integer.parseInt(userText2.getText());
+                int Belv =  Integer.parseInt(userText3.getText());
+                int PW =  Integer.parseInt(userText4.getText());
+                int DVW =  Integer.parseInt(userText5.getText());
+                int DSB =  Integer.parseInt(userText6.getText());
+                int Chislehurst =  Integer.parseInt(userText7.getText());
+                int Swan =  Integer.parseInt(userText8.getText());
+                int JRS =  Integer.parseInt(userText9.getText());
+                int WW =  Integer.parseInt(userText10.getText());
+
+
+
+
 
                 for (int j : ownList) {
                     System.out.println(j);
                 }
 
 
-                new SortingAlg(ownList);
+                new SortingAlg(ownList, Fleetdown);
 
             }
 
