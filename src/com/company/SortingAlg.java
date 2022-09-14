@@ -1,18 +1,9 @@
 package com.company;
 
-public class SortingAlg extends  OwnTable{
+public class SortingAlg extends OwnTable{
 
-    public SortingAlg() {
+    public SortingAlg(int[] ownList) {
         //SORT
-
-
-
-
-
-
-        System.out.println("----------");
-
-        System.out.println(ownList[2]);
 
         System.out.println("----------");
 
@@ -30,8 +21,12 @@ public class SortingAlg extends  OwnTable{
                 }
             }
         }
-        System.out.println(ownList[0]);
-        System.out.println(ownList[9]);
+
+        for (int j : ownList) {
+            System.out.println(j);
+        }
+
+        new OwnTable2(ownList);
         }
   }
 

@@ -32,16 +32,16 @@ public class OwnTable implements ActionListener {
     private static JTextField userText8;
     private static JTextField userText9;
     private static JTextField userText10;
-    private static JTextField userText11;
+
     int ownList[] = new int[10];
 
     public OwnTable(){
 
         JPanel panel = new JPanel();
         JFrame frame = new JFrame();
-        frame.setSize(800, 500); // dimensions of window
+        frame.setSize(800, 500);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.add(panel); //panel is added to the whole frame
+        frame.add(panel);
 
         panel.setLayout(null);
 
@@ -54,69 +54,69 @@ public class OwnTable implements ActionListener {
         userText.setBounds(50,75,165,25);
         panel.add(userText);
 
-        userLabel = new JLabel("Teams:");// JLabel is text on the window
+        userLabel = new JLabel("Teams:");
         userLabel.setBounds(50,90,550,100);
-        panel.add(userLabel);// you have to add everything to panel
+        panel.add(userLabel);
 
-        button1 = new JButton("Fleetdown United");// creates a button with text
+        button1 = new JButton("Fleetdown United");
         button1.setBounds(50,160,175,50);
-        button1.addActionListener(this);//If button is clicked, runs actionPerformed
+        button1.addActionListener(this);
         panel.add(button1);
         userText1 = new JTextField(25);
         userText1.setBounds(50,215,25,25);
         panel.add(userText1);
 
-        button2 = new JButton("Northfleet Eagles");// creates a button with text
+        button2 = new JButton("Northfleet Eagles");
         button2 .setBounds(235,160,175,50);
-        button2 .addActionListener(this);//If button is clicked, runs actionPerformed
+        button2 .addActionListener(this);
         panel.add(button2);
         userText2 = new JTextField(25);
         userText2.setBounds(235,215,25,25);
         panel.add(userText2);
 
-        button3 = new JButton("Belvedere Youth");// creates a button with text
+        button3 = new JButton("Belvedere Youth");
         button3.setBounds(420,160,175,50);
-        button3.addActionListener(this);//If button is clicked, runs actionPerformed
+        button3.addActionListener(this);
         panel.add(button3);
         userText3 = new JTextField(25);
         userText3.setBounds(420,215,25,25);
         panel.add(userText3);
 
-        button4 = new JButton("Parkwood Rangers (G)");// creates a button with text
+        button4 = new JButton("Parkwood Rangers (G)");
         button4.setBounds(605,160,175,50);
-        button4.addActionListener(this);//If button is clicked, runs actionPerformed
+        button4.addActionListener(this);
         panel.add(button4);
         userText4 = new JTextField(25);
         userText4.setBounds(605,215,25,25);
         panel.add(userText4);
 
-        button5 = new JButton("Dulwich Village White");// creates a button with text
+        button5 = new JButton("Dulwich Village White");
         button5.setBounds(50,250,175,50);
-        button5.addActionListener(this);//If button is clicked, runs actionPerformed
+        button5.addActionListener(this);
         panel.add(button5);
         userText5 = new JTextField(25);
         userText5.setBounds(50,305,25,25);
         panel.add(userText5);
 
-        button6 = new JButton("Danson Sports Black");// creates a button with text
+        button6 = new JButton("Danson Sports Black");
         button6.setBounds(235,250,175,50);
-        button6.addActionListener(this);//If button is clicked, runs actionPerformed
+        button6.addActionListener(this);
         panel.add(button6);
         userText6 = new JTextField(25);
         userText6.setBounds(235,305,25,25);
         panel.add(userText6);
 
-        button7 = new JButton("Chislehurst Wanderers");// creates a button with text
+        button7 = new JButton("Chislehurst Wanderers");
         button7.setBounds(420,250,175,50);
-        button7.addActionListener(this);//If button is clicked, runs actionPerformed
+        button7.addActionListener(this);
         panel.add(button7);
         userText7 = new JTextField(25);
         userText7.setBounds(420,305,25,25);
         panel.add(userText7);
 
-        button8 = new JButton("Swanscombe Tigers");// creates a button with text
+        button8 = new JButton("Swanscombe Tigers");
         button8.setBounds(605,250,175,50);
-        button8.addActionListener(this);//If button is clicked, runs actionPerformed
+        button8.addActionListener(this);
         panel.add(button8);
         userText8 = new JTextField(25);
         userText8.setBounds(605,305,25,25);
@@ -163,7 +163,7 @@ public class OwnTable implements ActionListener {
                 }
 
 
-                new SortingAlg();
+                new SortingAlg(ownList);
 
             }
 
