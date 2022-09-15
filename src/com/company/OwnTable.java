@@ -34,7 +34,7 @@ public class OwnTable implements ActionListener {
     private static JTextField userText10;
 
     int []ownList = new int[10];
-    String []Teams = new String[10];
+
 
     public OwnTable(){
 
@@ -149,7 +149,7 @@ public class OwnTable implements ActionListener {
 
 
 
-                ownList[0] = Integer.parseInt(userText1.getText());
+                ownList[0]  = Integer.parseInt(userText1.getText());
                 ownList[1] = Integer.parseInt(userText2.getText());
                 ownList[2] = Integer.parseInt(userText3.getText());
                 ownList[3] = Integer.parseInt(userText4.getText());
@@ -166,7 +166,7 @@ public class OwnTable implements ActionListener {
                 int PW =  Integer.parseInt(userText4.getText());
                 int DVW =  Integer.parseInt(userText5.getText());
                 int DSB =  Integer.parseInt(userText6.getText());
-                int Chislehurst =  Integer.parseInt(userText7.getText());
+                int Chis =  Integer.parseInt(userText7.getText());
                 int Swan =  Integer.parseInt(userText8.getText());
                 int JRS =  Integer.parseInt(userText9.getText());
                 int WW =  Integer.parseInt(userText10.getText());
@@ -180,7 +180,7 @@ public class OwnTable implements ActionListener {
                 }
 
 
-                new SortingAlg(ownList, Fleetdown);
+                new SortingAlg(ownList, Fleetdown, Nf, Belv, PW, DVW, DSB, Chis, Swan, JRS, WW);
 
             }
 

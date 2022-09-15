@@ -1,9 +1,10 @@
 package com.company;
 
 public class SortingAlg extends OwnTable{
-
-    public SortingAlg(int[] ownList, int Fleetdown) {
+    String[]oneD = new String [11];
+    public SortingAlg(int[] ownList, int Fleetdown, int Nf, int Belv, int PW, int DVW, int DSB, int Chis, int Swan, int JRS, int WW) {
         //SORT
+
 
         System.out.println("----------");
 
@@ -26,24 +27,83 @@ public class SortingAlg extends OwnTable{
             System.out.println(j);
         }
 
-        int[][]twoD = new int [11][2];
+
+
+
+// -------------------------------final battle--------------------------------------------------------
 
         for (int i = 0; i < ownList.length; i++){
-            twoD[i][1] = (ownList[i]); // places the ordered list into each row of column2 of the 2d array
+            if (Fleetdown == ownList[i]){
+                oneD[i]= "Fleetdown";
+            }
         }
 
         for (int i = 0; i < ownList.length; i++){
-            if (Fleetdown == twoD[i][1]){
-                twoD[1][0] = Integer.parseInt("Fleetdown");
-
+            if (Nf == ownList[i]){
+                oneD[i] = "Northfleet eagles";
             }
-        }// looks good
-        // gonna have to repeat the above 9 more times
-        // so gonna have to have 9 more parameters into SortingAlg
+        }
+
+        for (int i = 0; i < ownList.length; i++){
+            if (Belv == ownList[i]){
+                oneD[i] = "Belvedere";
+            }
+        }
+
+
+        for (int i = 0; i < ownList.length; i++){
+            if (PW == ownList[i]){
+                oneD[i] = "Parkwood rangers";
+            }
+        }
+
+        for (int i = 0; i < ownList.length; i++){
+            if (DVW == ownList[i]){
+                oneD[i] = "Dulwich village white";
+            }
+        }
+
+
+        for (int i = 0; i < ownList.length; i++){
+            if (DSB == ownList[i]){
+                oneD[i] = "Danson sport black";
+            }
+        }
+
+
+        for (int i = 0; i < ownList.length; i++){
+            if (Chis == ownList[i]){
+                oneD[i] = "Chislehurst";
+            }
+        }
+
+
+        for (int i = 0; i < ownList.length; i++){
+            if (Swan == ownList[i]){
+                oneD[i] = "Swanscombe tigers";
+            }
+        }
+
+
+        for (int i = 0; i < ownList.length; i++){
+            if (JRS == ownList[i]){
+                oneD[i] = "Junior red sabres";
+            }
+        }
+
+
+        for (int i = 0; i < ownList.length; i++){
+            if (WW == ownList[i]){
+                oneD[i] = "Welling wanderers";
+            }
+        }
 
 
 
-        new OwnTable2(ownList);
+
+
+
+        new OwnTable2(oneD, ownList);
         }
   }
 
