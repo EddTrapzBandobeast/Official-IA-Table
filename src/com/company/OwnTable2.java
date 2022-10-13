@@ -7,7 +7,7 @@ public class OwnTable2 {
     String[] column2 = new String[2];
     String[][] data2 = new String[10][2];
 
-    public OwnTable2(String[] oneD, int[] ownList) {
+    public OwnTable2(String[] oneD, int[] ownList, String tableTop) {
 
         JFrame frame = new JFrame();
         frame.setSize(800, 500);
@@ -23,7 +23,7 @@ public class OwnTable2 {
         }
 
         column2[0] = "Team";
-        column2[1] = "damn.";
+        column2[1] = tableTop;
 
 
         JTable table = new JTable(data2, column2);

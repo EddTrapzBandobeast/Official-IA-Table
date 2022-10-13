@@ -2,7 +2,7 @@ package com.company;
 
 public class SortingAlg extends OwnTable{
     String[]oneD = new String [11];
-    public SortingAlg(int[] ownList, int Fleetdown, int Nf, int Belv, int PW, int DVW, int DSB, int Chis, int Swan, int JRS, int WW) {
+    public SortingAlg(int[] ownList, int Fleetdown, int Nf, int Belv, int PW, int DVW, int DSB, int Chis, int Swan, int JRS, int WW, String tableTop) {
         //SORT
 
 
@@ -98,12 +98,12 @@ public class SortingAlg extends OwnTable{
             }
         }
 
+String TableTop2 = tableTop + ".";
 
 
 
 
-
-        new OwnTable2(oneD, ownList);
+        new OwnTable2(oneD, ownList, tableTop);
         }
   }
 

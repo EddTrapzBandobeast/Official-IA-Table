@@ -170,6 +170,7 @@ public class OwnTable implements ActionListener {
                 int Swan =  Integer.parseInt(userText8.getText());
                 int JRS =  Integer.parseInt(userText9.getText());
                 int WW =  Integer.parseInt(userText10.getText());
+                String TableTop = (userText.getText());
 
 
 
@@ -180,7 +181,7 @@ public class OwnTable implements ActionListener {
                 }
 
 
-                new SortingAlg(ownList, Fleetdown, Nf, Belv, PW, DVW, DSB, Chis, Swan, JRS, WW);
+                new SortingAlg(ownList, Fleetdown, Nf, Belv, PW, DVW, DSB, Chis, Swan, JRS, WW, TableTop);
 
             }
 
