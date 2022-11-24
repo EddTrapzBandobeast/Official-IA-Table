@@ -7,7 +7,7 @@ public class OwnTable2 {
     String[] column2 = new String[2];
     String[][] data2 = new String[10][2];
 
-    public OwnTable2(String[] oneD, int[] ownList, String tableTop) {
+    public OwnTable2(String[] oneD, int[] ownList, String TableTop) {
 
         JFrame frame = new JFrame();
         frame.setSize(800, 500);
@@ -23,7 +23,7 @@ public class OwnTable2 {
         }
 
         column2[0] = "Team";
-        column2[1] = tableTop;
+        column2[1] = TableTop;
 
 
         JTable table = new JTable(data2, column2);
@@ -31,6 +31,7 @@ public class OwnTable2 {
         table.setBounds(0, 400, 100, 500);
         JScrollPane sp = new JScrollPane(table);
         frame.add(sp);
+
     }
 
     }

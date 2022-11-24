@@ -176,12 +176,9 @@ public class OwnTable implements ActionListener {
 
 
 
-                for (int j : ownList) {
-                    System.out.println(j);
-                }
-
-
                 new SortingAlg(ownList, Fleetdown, Nf, Belv, PW, DVW, DSB, Chis, Swan, JRS, WW, TableTop);
+
+
 
             }
 

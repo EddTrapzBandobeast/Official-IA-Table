@@ -6,7 +6,7 @@ public class GUI_LeagueT extends ReadCSV {
     String column1[] = new String[6];
     String data1[][] = new String[11][6];
 
-    public GUI_LeagueT(){
+    public void CreateJTable(){
 
         JFrame frame = new JFrame();
         frame.setSize(800,500);
