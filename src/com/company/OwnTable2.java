@@ -1,6 +1,17 @@
 package com.company;
 
 import javax.swing.*;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+
+// import java.awt.event.ActionEvent
+// import java.awt.event.ActionListener;
+// import javax.swing.*;
+// import java.io.File;
+// import java.io.BufferWriter;
+// import java.io.FileWriter
+
 
 public class OwnTable2 {
 
@@ -32,8 +43,32 @@ public class OwnTable2 {
         JScrollPane sp = new JScrollPane(table);
         frame.add(sp);
 
+        try {
+            File file = new File("C:\\Users\\EddTrapz\\Desktop\\CompIAEnd.txt");
+            if (!file.exists()) {
+                file.createNewFile();
+            }
+                FileWriter fw = new FileWriter(file.getAbsoluteFile());
+            BufferedWriter bw = new BufferedWriter(fw);
+
+            bw.write("  " + TableTop + ": ");
+            bw.write("\n ___________");
+
+            for (int i = 0; i < table.getRowCount(); i++) {
+                for (int j = 0; j < table.getColumnCount(); j++) {
+                    bw.write((String) table.getModel().getValueAt(i, j) + "  ");
+                }
+                bw.write("\n  \n");
+            }
+            bw.close();
+            fw.close();
+            JOptionPane.showMessageDialog(null, "Data Exported");
+
+        }catch(Exception e){
+            e.printStackTrace();
+        }
     }
 
-    }
+}
 
 
